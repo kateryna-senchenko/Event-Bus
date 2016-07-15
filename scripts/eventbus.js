@@ -45,7 +45,7 @@ var EventBus = function(){
 			"subscribe": _subscribe}
 };
 
-if (typeof define !== 'function') { 
+if (typeof (define) !== 'function') { 
 	var define = require('amdefine')(module)
 }
 
