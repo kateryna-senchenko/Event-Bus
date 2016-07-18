@@ -9,6 +9,10 @@ var EventBus = function(){
 		}else {
 			
 			var _specificSubscribers = _subscribers[eventType];
+			
+			if(typeof _specificSubscribers === 'undefined'){
+				return;
+			}
 							
 			for (var i = 0; i < _specificSubscribers.length; i++) {
 				
